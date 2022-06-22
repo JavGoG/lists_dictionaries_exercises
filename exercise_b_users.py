@@ -51,8 +51,47 @@ users = {
         "species": "snake"
       }
     ]
+  },
+  "Rita": {"twitter": "ritarita",
+    "lottery_numbers": [1, 4, 3, 78, 97, 55],
+    "home_town": "Dublin",
+    "pets": [
+      {
+        "name": "javier",
+        "species": "human"
+      }
+    ]
   }
 }
+
+print(users["Jonathan"]["twitter"])
+
+print(users["Erik"]["home_town"])
+
+print(users["Erik"]["lottery_numbers"])
+
+pet = users["Avril"]["pets"][0]
+print(pet['species'])
+
+print(users["Avril"]["pets"][0]["species"])
+
+print(users["Erik"]["lottery_numbers"][2])
+
+avril_lottery_numbers = [12, 14, 33, 38, 9, 25]
+even = []
+for number in avril_lottery_numbers:
+ if number % 2 == 0:
+  even.append(number)
+print(even)
+
+erik_lottery_numbers = [18, 34, 8, 11, 24]
+erik_lottery_numbers.append(7)
+print(erik_lottery_numbers)
+
+users["Erik"]["hometown"]= "Edinburgh"
+users["Erik"]["pets"][2]["name"]= "fluffy"
+print(users)
+
 
 # 1. Get Jonathan's Twitter handle (i.e. the string `"jonnyt"`)
 # 2. Get Erik's hometown

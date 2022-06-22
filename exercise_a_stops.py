@@ -1,5 +1,23 @@
 stops = [ "Croy", "Cumbernauld", "Falkirk High", "Linlithgow", "Livingston", "Haymarket" ]
 
+stops.append("Edinburgh Waverley")
+stops[0] = "Glasgow Queen St"
+stops[2] = "Polmont"
+index = 0
+index = stops.index("Linlithgow")
+print(index)
+stops.remove("Livingston")
+del stops[1]
+stops_len = 0
+stops_len = len(stops)
+print(stops_len)
+sorted_stops =[]
+stops.sort()
+print (stops)
+stops.reverse()
+for stop in stops:
+    print(stop)
+
 #1. Add "Edinburgh Waverley" to the end of the list
 #2. Add "Glasgow Queen St" to the start of the list
 #3. Add "Polmont" at the appropriate point (between "Falkirk High" and "Linlithgow")
