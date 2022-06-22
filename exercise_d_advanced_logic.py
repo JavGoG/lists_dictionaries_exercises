@@ -3,19 +3,43 @@
 numbers = [1, 6, 2, 2, 7, 1, 6, 13, 99, 7]
 
 # 1. Print out a list of the even integers:
+even_numbers = 0
+for even in numbers:
+    if even % 2 == 0:
+        print(even)
 
 
 # 2. Print the difference between the largest and smallest value:
+numbers = sorted(numbers)
+smaller = numbers[0]
+bigger = numbers[9]
+difference = bigger - smaller
+print(difference)
 
 
 # 3. Print True if the list contains a 2 next to a 2 somewhere.
+numbers = [1, 6, 2, 2, 7, 1, 6, 13, 99, 7]
 
-
-# 4. Print the sum of the numbers, 
+l1=[]
+for i in numbers:
+    if i not in l1:
+        l1.append(i)
+    else:
+        print(i,end=' ')
+# 4. Print the sum of the numbers,
 #    BUT ignore any section of numbers starting with a 6 and extending to the next 7.
 #    
 #    So [11, 6, 4, 99, 7, 11] would have sum of 22
-
+sum_of_numbers =[]
+x = 0
+for number in numbers:
+    x += 1
+    if number == 6:
+        
+        print('run')
+    else:
+        sum_of_numbers = numbers[x]
+    
 
 # 5. HARD! Print the sum of the numbers. 
 #    Except the number 13 is very unlucky, so it does not count.
@@ -23,8 +47,6 @@ numbers = [1, 6, 2, 2, 7, 1, 6, 13, 99, 7]
 #    HINT - You will need to track the index throughout the loop.
 #
 #    So [5, 13, 2] would have sum of 5. 
-
-
 
 
 
