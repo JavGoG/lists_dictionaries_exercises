@@ -44,5 +44,5 @@ for countries in united_kingdom:
     total_population += united_kingdom [counter]["population"] 
     counter += 1
 print(total_population)
-gd
+
 
